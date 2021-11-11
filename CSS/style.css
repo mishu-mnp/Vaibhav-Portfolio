@@ -88,7 +88,6 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -155,7 +154,7 @@ img {
   height: 5rem;
   padding: 1.5rem;
   z-index: var(--z-fixed);
-  background-color: #cb7e7e;
+  background-color: var(--text-color);
   color: white;
 }
 /*==================== NAV ====================*/
@@ -335,6 +334,7 @@ img {
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
+  font-size: 1.5rem;
 }
 
 .about__info {
@@ -500,6 +500,7 @@ img {
   justify-content: center;
   padding: 2.5rem;
 }
+
 /*==================== SERVICES ====================*/
 .services__container {
   display: flex;
@@ -544,14 +545,73 @@ img {
 /*==================== TESTIMONIAL ====================*/
 
 /*==================== CONTACT ME ====================*/
+.contact__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact__icon {
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.contact__title {
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.contact__subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.contact__content {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: 1px 0px 6px 15px #acacef;
+  height: 15rem;
+  width: 20rem;
+  padding: 15px;
+}
 
 /*==================== FOOTER ====================*/
-
+.footer__content {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  background-color: rgb(62, 67, 90);
+  height: 5rem;
+  padding: 1.28rem;
+  color: white;
+}
 /*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: 7rem;
+  background-color: var(--first-color);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
 
-/* Show scroll */
+.scrollup:hover {
+  background-color: var(--first-color-alt);
+}
 
-/*========== SCROLL BAR ==========*/
+.scrollup__icon {
+  font-size: 2rem;
+  color: white;
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
