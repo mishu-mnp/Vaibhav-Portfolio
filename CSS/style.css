@@ -465,7 +465,6 @@ img {
 
 /*==================== QUALIFICATION ====================*/
 .qualification__container {
-  /* border: 2px solid purple; */
   justify-content: center;
   margin: auto;
 }
@@ -474,6 +473,43 @@ img {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+
+.qualification__button {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover {
+  color: var(--first-color);
+}
+
+.qualification__icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qualification__title {
+  font-size: 1.2rem;
+  font-weight: 2rem;
+}
+
+.qualification__subtitle {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
 }
 
 /*==================== SERVICES ====================*/
