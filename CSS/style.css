@@ -348,8 +348,8 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img {
-  width: 200px;
-  border-radius: 0.5rem;
+  width: 250px;
+  border-radius: 1.5rem;
   justify-self: center;
   align-self: center;
 }
@@ -386,9 +386,17 @@ img {
   justify-content: center;
 }
 
+.about__container {
+  justify-content: center;
+  margin: auto;
+}
+
 /*==================== SKILLS ====================*/
 .skills__container {
   row-gap: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .skills__header {
@@ -425,33 +433,48 @@ img {
 .skills__list {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
+  justify-content: center;
 }
 
 .skills__titles {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
 }
 
 .skills__name {
   font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  font-weight: 15px;
 }
 
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
+.skills__data {
+  box-shadow: 5px 5px 4px salmon;
+  border-radius: 5px;
+  padding: 8px;
 }
 
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
+.skills__content {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: 1px 0px 6px 15px #acacef;
+  padding: 24px;
+  height: 33rem;
+  width: 20rem;
 }
 
-.skills__open .skills__arrow {
-  transform: rotate(-180deg);
-}
 /*==================== QUALIFICATION ====================*/
+.qualification__container {
+  /* border: 2px solid purple; */
+  justify-content: center;
+  margin: auto;
+}
+
+.qualification__tabs {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
 /*==================== SERVICES ====================*/
 
